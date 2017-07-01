@@ -1,0 +1,19 @@
+{
+  "name": "optionJS",
+  "version": "0.1.1",
+  "description": "Parse command line arguments for the UNIX style",
+  "keywords": [
+    "command line",
+    "parse",
+    "unix"
+  ],
+  "author": "JamesWatson",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/watsonserve/optionJS"
+  },
+  "bugs": {
+    "url": "https://github.com/watsonserve/optionJS/issues"
+  },
+  "license": "LGPL3.0"
+}

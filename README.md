@@ -1,7 +1,7 @@
 # optionJS
  Parse command line arguments for the UNIX style
 
-use:
+## use:
 
     option([{
       opt: String,    // a char to short option, like -x
@@ -11,7 +11,7 @@ use:
 
 ## example
 
-in test.js:
+#### in test.js:
 
     let option = require('optionJS');
 
@@ -27,11 +27,11 @@ in test.js:
 
     console.log(JSON.stringify(arguments));
 
-shell:
+#### shell:
 
 ```node test.js -o obj.o src.src``` **or** ```node test.js --out=obj.o src.src```
 
-console:
+#### console:
 
     {
       "out": "obj.o",

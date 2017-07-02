@@ -1,6 +1,6 @@
 /**
  * @name:   commandLineParser
- * @auth:   JamesWatson
+ * @author:   JamesWatson
  * @params: table = [{
  *            opt: String,
  *            option: String,

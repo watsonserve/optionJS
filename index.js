@@ -1,11 +1,11 @@
 /**
  * @name:   commandLineParser
- * @author:   JamesWatson
- * @params: table = [{
+ * @author: JamesWatson
+ * @param:  table = [{
  *            opt: String,
  *            option: String
  *          }, ...]
- * @params: argv = process.argv
+ * @param:  argv = process.argv
  * @return: args Object
  */
 
@@ -31,6 +31,10 @@ module.exports = function(table = [], argv = process.argv.slice(2)) {
       optionMap.option[item.option] = item;
     }
   });
+
+  if (!argv.length) {
+    return retArg;
+  }
 
   argv
   .map(item => {

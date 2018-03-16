@@ -1,6 +1,6 @@
 {
-  "name": "optionJS",
-  "version": "0.1.1",
+  "name": "opt-arguments",
+  "version": "0.2.0",
   "description": "Parse command line arguments for the UNIX style",
   "keywords": [
     "command line",

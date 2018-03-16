@@ -1,28 +1,25 @@
-# optionJS
+# opt-arguments
  Parse command line arguments for the UNIX style
 
 ## use:
 
-    option([{
+    optArguments([{
       opt: String,    // a char to short option, like -x
       option: String, // a word to long option, like --xxxx=yyyy
-      argument: Bool  // need a value or not
     }, ...])
 
 ## example
 
 #### in test.js:
 
-    let option = require('optionJS');
+    const optArguments = require('opt-arguments');
 
-    let arguments = option([{
+    let arguments = optArguments([{
       opt: 'h',
-      option: 'help',
-      argument: false
+      option: 'help'
     }, {
       opt: 'o',
-      option: 'out',
-      argument: true
+      option: 'out'
     }]);
 
     console.log(JSON.stringify(arguments));
@@ -34,6 +31,8 @@
 #### console:
 
     {
-      "out": "obj.o",
-      "default": "src.src"
+      "options": {
+        "out": "obj.o"
+      },
+      "default": ["src.src"]
     }

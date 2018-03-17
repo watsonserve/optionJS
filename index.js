@@ -47,11 +47,6 @@ module.exports = function(table = [], argv = process.argv.slice(2)) {
     return foo.concat(bar);
   })
   .forEach(item => {
-    if (key) {
-      retArg.options[key] = item || true;
-      key = null;
-      return;
-    }
     let op = null;
 
     // arguments
@@ -75,8 +70,15 @@ module.exports = function(table = [], argv = process.argv.slice(2)) {
         console.error(`option ${op} not found`);
         process.exit(1);
       }
+
       retArg.options[op.command] = true;
       key = op.command;
+      return;
+    }
+
+    if (key) {
+      retArg.options[key] = item || true;
+      key = null;
       return;
     }
 

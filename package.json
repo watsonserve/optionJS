@@ -1,6 +1,6 @@
 {
   "name": "opt-arguments",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Parse command line arguments for the UNIX style",
   "keywords": [
     "command line",

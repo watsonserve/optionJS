@@ -45,7 +45,7 @@ module.exports = function(table = [], argv = process.argv.slice(2)) {
   })
   .reduce((foo, bar) => {
     return foo.concat(bar);
-  })
+  }, [])
   .forEach(item => {
     let op = null;
 
